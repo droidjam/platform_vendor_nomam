@@ -56,5 +56,5 @@ PRODUCT_PACKAGES += \
 
 # Viper4Android files
 PRODUCT_COPY_FILES += \
-    vendor/$(VENDOR_KD)/prebuilt/common/lib/libV4AJniUtils.so:system/lib/libV4AJniUtils.so \
-    vendor/$(VENDOR_KD)/prebuilt/common/lib/soundfx/libv4a_fx_jb_NEON_HQ.so:system/lib/soundfx/libv4a_fx_jb_NEON_HQ.so
+    vendor/$(VENDOR_KD)/prebuilts/common/lib/libV4AJniUtils.so:system/lib/libV4AJniUtils.so \
+    vendor/$(VENDOR_KD)/prebuilts/common/lib/soundfx/libv4a_fx_jb_NEON_HQ.so:system/lib/soundfx/libv4a_fx_jb_NEON_HQ.so

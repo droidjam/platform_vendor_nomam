@@ -2,8 +2,8 @@ LOCAL_PATH := $(call my-dir)
 
 #
 # Prebuilt APKs
-
-#include $(CLEAR_VARS)
+#
+include $(CLEAR_VARS)
 LOCAL_MODULE := ViPER4Android
 LOCAL_SRC_FILES := common/system/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_TAGS := optional
