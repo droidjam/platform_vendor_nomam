@@ -1,0 +1,4 @@
+#Viper's Audio Tweaks
+lpa.decode=false
+tunnel.decode=false
+lpa.use-stagefright=false

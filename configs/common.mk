@@ -49,3 +49,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addon.d/50-nomam.sh:system/addon.d/50-nomam.sh \
     $(LOCAL_PATH)/bin/backuptool.functions:system/bin/backuptool.functions \
     $(LOCAL_PATH)/bin/backuptool.sh:system/bin/backuptool.sh
+
+#Add other apps
+PRODUCT_PACKAGES += \
+	ViPER4Android
+
+# Viper4Android files
+PRODUCT_COPY_FILES += \
+    vendor/$(VENDOR_KD)/prebuilt/common/lib/libV4AJniUtils.so:system/lib/libV4AJniUtils.so \
+    vendor/$(VENDOR_KD)/prebuilt/common/lib/soundfx/libv4a_fx_jb_NEON_HQ.so:system/lib/soundfx/libv4a_fx_jb_NEON_HQ.so
