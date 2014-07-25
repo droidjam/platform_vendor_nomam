@@ -58,3 +58,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/lib/libV4AJniUtils.so:system/lib/libV4AJniUtils.so \
     $(LOCAL_PATH)/lib/soundfx/libv4a_fx_jb_NEON_HQ.so:system/lib/soundfx/libv4a_fx_jb_NEON_HQ.so
+# Bootanim support
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
