@@ -62,3 +62,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
+
+# Superuser
+SUPERUSER_EMBEDDED := true
