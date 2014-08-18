@@ -35,7 +35,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.facelock.est_max_time=600 \
     ro.facelock.use_intro_anim=false \
     persist.sys.root_access=3
-
+	#Viper4Android Props
+    lpa.decode=false \
+    tunnel.decode=false \
+    lpa.use-stagefright=false \
+    persist.lap.decode=false
 # Common overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/nomam/overlays/common
 
@@ -52,23 +56,20 @@ PRODUCT_COPY_FILES += \
 
 #Add other apps
 PRODUCT_PACKAGES += \
-	ViPER4Android
+	ViPER4Android \
+	Superuser \
+	su
 
 # Viper4Android files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/lib/libV4AJniUtils.so:system/lib/libV4AJniUtils.so \
     $(LOCAL_PATH)/lib/soundfx/libv4a_fx_jb_NEON_HQ.so:system/lib/soundfx/libv4a_fx_jb_NEON_HQ.so
-# Bootanim support
 
+# Bootanim support
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
 
 # Superuser
 SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
-PRODUCT_PACKAGES := \
-    Superuser \
-    su
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=3
